@@ -4,7 +4,7 @@ export default function BlogPostPreview(post) {
     // const { enabled, intersectionRef } = useEnabledOnFirstIntersection()
 
     return (
-        <div ref={intersectionRef}>
+        <div>
           <ContentLink key={post.slug} href={`/blog/${post.slug}`}>
             <ContentLink.Title>{post.title}</ContentLink.Title>
     

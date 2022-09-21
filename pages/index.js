@@ -8,8 +8,10 @@ import Link from 'next/link';
 import Date from '../components/date';
 import Container from '../components/Container';
 import BlogPostPreview from '../components/BlogPostPreview';
+import React from 'react';
 
 const name = "Tanner Oakes"
+const post1 = {title: "A Beginner's Guide to Strings in Go", publishedAt: "2022-09-09", description: "Test descriptions bring all the boys to the yard"}
 
 export default function Home({ posts }) {
   return (
@@ -42,7 +44,7 @@ export default function Home({ posts }) {
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row mt-16 items-start">   
             <div className="flex flex-col pr-8">
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">{name}</h1>
+                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white dark:text-white">{name}</h1>
                 <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                     Senior Backend Engineer @ LTK
                 </h2>
@@ -62,8 +64,8 @@ export default function Home({ posts }) {
                 />
             </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-black dark:text-white">
-            Featured Posts
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-white dark:text-white">
+            Projects
         </h3>
         <div className="flex gap-6 flex-col md:flex-row">
             <ProjectPostCard
@@ -72,7 +74,7 @@ export default function Home({ posts }) {
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
             <ProjectPostCard
-              title="TBD"
+              title="RSVP Event DAPP"
               slug="rust"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
@@ -82,28 +84,14 @@ export default function Home({ posts }) {
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-black dark:text-white">
-            Projects
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-white dark:text-white">
+            Posts
         </h3>
         <div className="flex gap-6 flex-col md:flex-row">
-            {/* <ProjectPostCard
-              title="A Beginner's Guide to Strings in Go"
-              slug="/"
-              gradient="from-[#D8B4FE] to-[#818CF8]"
-            />
-            <ProjectPostCard
-              title="TBD"
-              slug="/"
-              gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-            />
-            <ProjectPostCard
-              title="Also TBD"
-              slug="/"
-              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-            /> */}
-            {posts.map((post) => {
+            {/* {posts.map((post) => {
               return <BlogPostPreview key={post.slug} {...post} />
-            })}
+            })} */}
+            <BlogPostPreview {...post1}/>
         </div>
         {/* <main>{children}</main> */}
         {/* {!home && (

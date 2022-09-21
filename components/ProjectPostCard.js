@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 // import useSWR from 'swr';
 import cn from 'classnames';
 
@@ -14,7 +15,7 @@ export default function ProjectPostCard({ title, slug, gradient }) {
       <a
         className={cn(
           'transform hover:scale-[1.01] transition-all',
-          'rounded-xl w-full md:w-1/3 bg-gradient-to-r p-1',
+          'rounded-xl w-full md:w-1/3 bg-black p-1',
           gradient
         )}
       >
@@ -25,7 +26,18 @@ export default function ProjectPostCard({ title, slug, gradient }) {
             </h4>
           </div>
           <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
-            <svg
+          <div className="w-[50px] sm:w-[75px] relative mb-8 sm:mb-0 mr-auto">
+                <Image
+                alt={name}
+                height={5}
+                width={5}
+                src="/images/Go-Logo/PNG/Go-Logo_LightBlue.png"
+                sizes="5vw"
+                priority
+                className="rounded-full filter"
+                />
+            </div>
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
@@ -44,7 +56,7 @@ export default function ProjectPostCard({ title, slug, gradient }) {
                 strokeWidth={2}
                 d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
               />
-            </svg>
+            </svg> */}
             <span className="ml-2 align-baseline capsize">
               {/* {views ? new Number(views).toLocaleString() : '–––'} */}
             </span>
