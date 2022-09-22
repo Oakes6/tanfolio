@@ -27,7 +27,7 @@ export default function ProjectPostCard({ title, slug, img }) {
           <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
           <div className="w-[50px] sm:w-[60px] relative mb-8 sm:mb-0 mr-auto">
                 <Image
-                alt={"Tanner"}
+                alt={""}
                 height={5}
                 width={5}
                 src={img}
