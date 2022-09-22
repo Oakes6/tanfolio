@@ -76,7 +76,7 @@ export default function Home({ posts }) {
             <ProjectPostCard
               title="RSVP Event DAPP"
               slug="https://web3-rsvp-frontend-starter-ufvv.vercel.app/"
-              img={""}
+              img={"/images/solidity.png"}
             />
             <ProjectPostCard
               title="This Site"
