@@ -15,7 +15,7 @@ export default function ProjectPostCard({ title, slug, img }) {
       <a
         className={cn(
           'transform hover:scale-[1.01] transition-all',
-          'rounded-xl w-full md:w-1/3 bg-stone-300 p-1'
+          'rounded-xl w-full md:w-1/3 bg-stone-400 p-1'
         )}
       >
         <div className="flex flex-col justify-between h-full bg-stone-800 dark:bg-gray-900 rounded-lg p-4">

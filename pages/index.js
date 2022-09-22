@@ -11,7 +11,7 @@ import BlogPostPreview from '../components/BlogPostPreview';
 import React from 'react';
 
 const name = "Tanner Oakes"
-const post1 = {title: "A Beginner's Guide to Strings in Go", publishedAt: "2022-09-09", description: "Test descriptions bring all the boys to the yard"}
+const post1 = {title: "A Beginner's Guide to Strings in Go", publishedAtFormatted: "Aug 31, 2022", description: "Learn the basics of the string data type in Go and avoid misunderstood mechanics: representation in memory, character encoding schemes, and more."}
 
 export default function Home({ posts }) {
   return (
