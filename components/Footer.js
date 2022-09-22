@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ExternalLink = ({ href, children }) => (
   <a
-    className="text-stone-300 hover:text-gray-600 transition"
+    className="text-stone-400 hover:text-stone-100 transition"
     target="_blank"
     rel="noopener noreferrer"
     href={href}
@@ -21,15 +21,15 @@ export default function Footer() {
       <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4">
           <Link href="/">
-            <a className="text-stone-300 hover:text-gray-600 transition">Home</a>
+            <a className="text-stone-400 hover:text-stone-100 transition">Home</a>
           </Link>
           {/* <Link href="/about">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-stone-100 transition">
               About
             </a>
           </Link> */}
           {/* <Link href="/newsletter">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-stone-100 transition">
               Newsletter
             </a>
           </Link> */}
@@ -42,17 +42,17 @@ export default function Footer() {
         <div className="flex flex-col space-y-4">
         <ExternalLink href="https://github.com/Oakes6">GitHub</ExternalLink>
           {/* <Link href="/guestbook">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-stone-100 transition">
               Guestbook
             </a>
           </Link> */}
           {/* <Link href="/snippets">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-stone-100 transition">
               Snippets
             </a>
           </Link> */}
           {/* <Link href="/tweets">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-stone-100 transition">
               Tweets
             </a>
           </Link> */}
