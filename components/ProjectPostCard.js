@@ -6,32 +6,31 @@ import cn from 'classnames';
 // import fetcher from 'lib/fetcher';
 // import { Views } from 'lib/types';
 
-export default function ProjectPostCard({ title, slug, gradient }) {
+export default function ProjectPostCard({ title, slug, img }) {
 //   const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
 //   const views = data?.total;
 
   return (
-    <Link href={`/blog/${slug}`}>
+    <Link href={`${slug}`}>
       <a
         className={cn(
           'transform hover:scale-[1.01] transition-all',
-          'rounded-xl w-full md:w-1/3 bg-black p-1',
-          gradient
+          'rounded-xl w-full md:w-1/3 bg-stone-300 p-1'
         )}
       >
-        <div className="flex flex-col justify-between h-full bg-white dark:bg-gray-900 rounded-lg p-4">
+        <div className="flex flex-col justify-between h-full bg-stone-800 dark:bg-gray-900 rounded-lg p-4">
           <div className="flex flex-col md:flex-row justify-between">
-            <h4 className="text-lg md:text-lg font-medium mb-6 sm:mb-10 w-full text-gray-900 dark:text-gray-100 tracking-tight">
+            <h4 className="text-lg md:text-lg font-medium mb-6 sm:mb-10 w-full text-stone-200 dark:text-gray-100 tracking-tight">
               {title}
             </h4>
           </div>
           <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
-          <div className="w-[50px] sm:w-[75px] relative mb-8 sm:mb-0 mr-auto">
+          <div className="w-[50px] sm:w-[60px] relative mb-8 sm:mb-0 mr-auto">
                 <Image
-                alt={name}
+                alt={"Tanner"}
                 height={5}
                 width={5}
-                src="/images/Go-Logo/PNG/Go-Logo_LightBlue.png"
+                src={img}
                 sizes="5vw"
                 priority
                 className="rounded-full filter"

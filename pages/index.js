@@ -44,12 +44,12 @@ export default function Home({ posts }) {
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row mt-16 items-start">   
             <div className="flex flex-col pr-8">
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white dark:text-white">{name}</h1>
-                <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-stone-200 dark:text-white">{name}</h1>
+                <h2 className="text-stone-300 dark:text-gray-200 mb-4">
                     Senior Backend Engineer @ LTK
                 </h2>
-                <p className="text-gray-600 dark:text-gray-200 mb-4">
-                    Building out distributed systems so you don't have to.
+                <p className="text-stone-300 dark:text-gray-200 mb-4">
+                    Building distributed systems so you don't have to.
                 </p>
             </div>
             <div className="w-[80px] sm:w-[150px] relative mb-8 sm:mb-0 mr-auto">
@@ -64,27 +64,27 @@ export default function Home({ posts }) {
                 />
             </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-white dark:text-white">
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-stone-200 dark:text-white">
             Projects
         </h3>
         <div className="flex gap-6 flex-col md:flex-row">
             <ProjectPostCard
-              title="A Beginner's Guide to Strings in Go"
-              slug="beginners-guide-to-go"
-              gradient="from-[#D8B4FE] to-[#818CF8]"
+              title="Generate UUIDs"
+              slug="https://github.com/Oakes6/guids"
+              img={"/images/Go-Logo/PNG/Go-Logo_LightBlue.png"}
             />
             <ProjectPostCard
               title="RSVP Event DAPP"
-              slug="rust"
-              gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
+              slug="https://web3-rsvp-frontend-starter-ufvv.vercel.app/"
+              img={"/images/Solidity.png"}
             />
             <ProjectPostCard
-              title="Also TBD"
-              slug="react-state-management"
-              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
+              title="This Site"
+              slug="/"
+              img={"/images/nextjs2.png"}
             />
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-white dark:text-white">
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-stone-200 dark:text-white">
             Posts
         </h3>
         <div className="flex gap-6 flex-col md:flex-row">
@@ -103,7 +103,7 @@ export default function Home({ posts }) {
         )} */}
       </div>
     </Container>
-  );
+  )
 }
 
 export async function getStaticProps() {
