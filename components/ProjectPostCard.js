@@ -1,21 +1,21 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 // import useSWR from 'swr';
-import cn from 'classnames';
+import cn from "classnames";
 
 // import fetcher from 'lib/fetcher';
 // import { Views } from 'lib/types';
 
 export default function ProjectPostCard({ title, slug, img }) {
-//   const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
-//   const views = data?.total;
+  //   const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
+  //   const views = data?.total;
 
   return (
     <Link href={`${slug}`}>
       <a
         className={cn(
-          'transform hover:scale-[1.01] transition-all',
-          'rounded-xl w-full md:w-1/3 bg-stone-400 p-1'
+          "transform hover:scale-[1.01] transition-all",
+          "rounded-xl w-full md:w-1/3 bg-stone-400 p-1"
         )}
       >
         <div className="flex flex-col justify-between h-full bg-stone-800 dark:bg-gray-900 rounded-lg p-4">
@@ -25,8 +25,8 @@ export default function ProjectPostCard({ title, slug, img }) {
             </h4>
           </div>
           <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
-          <div className="w-[50px] sm:w-[60px] relative mb-8 sm:mb-0 mr-auto">
-                <Image
+            <div className="w-[50px] sm:w-[60px] relative mb-8 sm:mb-0 mr-auto">
+              <Image
                 alt={""}
                 height={5}
                 width={5}
@@ -34,7 +34,7 @@ export default function ProjectPostCard({ title, slug, img }) {
                 sizes="5vw"
                 priority
                 className="rounded-full filter"
-                />
+              />
             </div>
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"

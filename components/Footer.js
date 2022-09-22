@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 // import NowPlaying from 'components/NowPlaying';
 
@@ -21,7 +21,9 @@ export default function Footer() {
       <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4">
           <Link href="/">
-            <a className="text-stone-400 hover:text-stone-100 transition">Home</a>
+            <a className="text-stone-400 hover:text-stone-100 transition">
+              Home
+            </a>
           </Link>
           {/* <Link href="/about">
             <a className="text-gray-500 hover:text-stone-100 transition">
@@ -40,7 +42,7 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-        <ExternalLink href="https://github.com/Oakes6">GitHub</ExternalLink>
+          <ExternalLink href="https://github.com/Oakes6">GitHub</ExternalLink>
           {/* <Link href="/guestbook">
             <a className="text-gray-500 hover:text-stone-100 transition">
               Guestbook
