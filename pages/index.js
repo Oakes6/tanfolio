@@ -13,10 +13,18 @@ import React from "react";
 const name = "Tanner Oakes";
 const post1 = {
   title: "A Beginner's Guide to Strings in Go",
+  link: "https://oakes.hashnode.dev/beginner-strings-go",
   publishedAtFormatted: "Aug 31, 2022",
   description:
     "Learn the basics of the string data type in Go and avoid misunderstood mechanics: representation in memory, character encoding schemes, and more.",
 };
+const post2 = {
+  title: "Concurrent Programming in Go",
+  publishedAtFormatted: "Oct 14, 2022",
+  link: "https://oakes.hashnode.dev/concurrent-programming-in-go",
+  description:
+    "Unlocking Go's Concurrency Primitives",
+}
 
 export default function Home({ posts }) {
   return (
@@ -56,7 +64,7 @@ export default function Home({ posts }) {
               Senior Backend Engineer @ LTK
             </h2>
             <p className="text-stone-300 dark:text-gray-200 mb-4">
-              Building distributed systems so you don't have to.
+              Building distributed systems and fitting the pieces together.
             </p>
           </div>
           <div className="w-[80px] sm:w-[150px] relative mb-8 sm:mb-0 mr-auto">
@@ -94,11 +102,12 @@ export default function Home({ posts }) {
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-stone-200 dark:text-white">
           Posts
         </h3>
-        <div className="flex gap-6 flex-col md:flex-row">
+        <div className="flex-auto gap-6 mt-5 space-y-10">
           {/* {posts.map((post) => {
               return <BlogPostPreview key={post.slug} {...post} />
             })} */}
           <BlogPostPreview {...post1} />
+          <BlogPostPreview {...post2} />
         </div>
         {/* <main>{children}</main> */}
         {/* {!home && (

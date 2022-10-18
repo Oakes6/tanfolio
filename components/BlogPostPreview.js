@@ -8,7 +8,7 @@ export default function BlogPostPreview(post) {
       {/* <ContentLink key={post.slug} href={`/blog/${post.slug}`}> */}
       <ContentLink
         key={post.slug}
-        href="https://oakes.hashnode.dev/beginner-strings-go"
+        href={post.link}
       >
         <ContentLink.Title>{post.title}</ContentLink.Title>
 
